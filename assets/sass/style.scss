@@ -23,17 +23,16 @@ body {
 
 .card {
     position: absolute;
-    top: 5%;
+    top: 10%;
     width: 25em;
     background-color: $lightcolor;
-    overflow: hidden;
+    transition: box-shadow 0.8s;
     .card-img {
-        height: 16.7em;
-        object-fit: fill;
         overflow: hidden;
+        height: 35vh;
         img {
             width: 100%;
-            overflow: hidden;
+            transition: filter 0.8s, opacity 0.8s, transform 0.8s;
             }
     }
 }
@@ -60,59 +59,72 @@ body {
 .card-content {
     position: relative;
     color: $colortext;
+    background-color: $lightcolor;
+    transition: transform 0.7s;
     .card-tag {
         position: absolute;
-        top: -2.2em;
+        top: -4vh;
         color: white;
         background-color: $colorred;
         padding: 0.5em 1em;
     }
     .card-article {
-        padding: 4vh 3vw;
+        padding: 4vh 3vw 0 3vw;
         text-align: justify;
-        h1, h2 {
-            padding: 2vh 0;
-        }
+        overflow: hidden;
+        height: 16vh;
         h1 {
             font-family: 'Tangerine', cursive;
             font-size: 2.8em;
             color: $colortitle;
             font-weight: lighter;
-            padding-bottom: 2vh;
+            padding: 2vh 0 2vh 0;
         }
         h2 {
             font-size: 1.6em;
-            margin-bottom: 3vh;
+            padding: 1vh 0 3vh 0;
             color: $colorred;
             font-weight: lighter;
+        }
+        p {
         }
     }
 }
 
  .card-foot {
-     margin-top: 4vh;
-     color: $colortextlight;
-     .fa-comments {
-         padding-left: 1.5em;
-     }
+    padding: 3vh 3vw 4vh 3vw;
+    color: $colortextlight;
+    background-color: $lightcolor;
+    .fa-comments {
+        padding-left: 1.5em;
+    }
  }
 
 
 /*Animation*/
-//text appears (hidden by default)
-//--> display none -> mouseover .card -> display text
-//zoom into the image
-//image change color
-//shadow box
-//IMAGE in background cover = do not change box height !!!
+// shadow + image scale/color change
 .card:hover {
     box-shadow: 0 0 8px 1px rgb(148, 148, 148);
+    transition-duration: 0.7s;
     .card-img {
         img {
             filter: brightness(110%) contrast(125%);
-            opacity: 0.8;
-            transform: scale(1.8,1.8) translate(-0.8vw, 2.5vh);
-            transition-duration: 0.5s;
+            opacity: 0.75;
+            transform: scale(1.8,1.8) translate(-0.8vw, 0.4vh);
+            transition-duration: 0.7s;
         }
     }
 }
+
+// content up
+.card:hover {
+    .card-content {
+        transform: translatey(-10vh);
+        .card-article {
+            overflow: visible;
+        }
+    }
+}
+
+// text appearance ????????????
+// fixit dans texte
