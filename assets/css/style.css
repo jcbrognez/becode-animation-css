@@ -27,6 +27,7 @@ body {
   top: 5%;
   width: 25em;
   background-color: #f7f7f7;
+  overflow: hidden;
 }
 
 .card .card-img img {
@@ -38,8 +39,8 @@ body {
   top: 1em;
   right: 1em;
   background-color: #a72016;
-  width: 4em;
-  height: 4em;
+  width: 3.3em;
+  height: 3.3em;
   border-radius: 50%;
   text-align: center;
   display: -webkit-box;
@@ -64,7 +65,7 @@ body {
 
 .card-content {
   position: relative;
-  color: #727272;
+  color: #949494;
 }
 
 .card-content .card-tag {
@@ -86,7 +87,7 @@ body {
 }
 
 .card-content .card-article h1 {
-  font-family: 'Miss Fajardose', cursive;
+  font-family: 'Tangerine', cursive;
   font-size: 2.8em;
   color: #333333;
   font-weight: lighter;
@@ -102,6 +103,11 @@ body {
 
 .card-foot {
   margin-top: 4vh;
+  color: #b8b8b8;
+}
+
+.card-foot .fa-comments {
+  padding-left: 1.5em;
 }
 
 /* ADD
