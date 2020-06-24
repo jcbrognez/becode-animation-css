@@ -5,10 +5,6 @@
           box-sizing: border-box;
 }
 
-/* Fonts
-font-family: 'Miss Fajardose', cursive;
-font-family: 'Philosopher', sans-serif;
-*/
 body {
   font-family: 'Philosopher', sans-serif;
   font-size: 1em;
@@ -30,8 +26,16 @@ body {
   overflow: hidden;
 }
 
+.card .card-img {
+  height: 16.7em;
+  -o-object-fit: fill;
+     object-fit: fill;
+  overflow: hidden;
+}
+
 .card .card-img img {
   width: 100%;
+  overflow: hidden;
 }
 
 .card-date {
@@ -82,7 +86,6 @@ body {
 }
 
 .card-content .card-article h1, .card-content .card-article h2 {
-  margin: 1vh 0;
   padding: 2vh 0;
 }
 
@@ -110,19 +113,19 @@ body {
   padding-left: 1.5em;
 }
 
-/* ADD
-@font-face
+/*Animation*/
+.card:hover {
+  -webkit-box-shadow: 0 0 8px 1px #949494;
+          box-shadow: 0 0 8px 1px #949494;
+}
 
-HTML...
-
-SASS
-
-_partial.scss & import !?!
-    * reset
-    * card
-    * media preset
-    * ... ?
-    * @font-face
-
-*/
+.card:hover .card-img img {
+  -webkit-filter: brightness(110%) contrast(125%);
+          filter: brightness(110%) contrast(125%);
+  opacity: 0.8;
+  -webkit-transform: scale(1.8, 1.8) translate(-0.8vw, 2.5vh);
+          transform: scale(1.8, 1.8) translate(-0.8vw, 2.5vh);
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
 /*# sourceMappingURL=style.css.map */
