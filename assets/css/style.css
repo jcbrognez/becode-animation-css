@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Fonts
+font-family: 'Miss Fajardose', cursive;
+font-family: 'Philosopher', sans-serif;
+*/
+body {
+  font-family: 'Philosopher', sans-serif;
+  font-size: 1em;
+  background-color: #e0e0e0;
+  line-height: 1.2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card {
+  position: absolute;
+  top: 5%;
+  width: 25em;
+  background-color: #f7f7f7;
+}
+
+.card .card-img img {
+  width: 100%;
+}
+
+.card-date {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  background-color: #a72016;
+  width: 4em;
+  height: 4em;
+  border-radius: 50%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.card-date p {
+  color: white;
+  font-size: 0.9em;
+}
+
+.card-content {
+  position: relative;
+  color: #727272;
+}
+
+.card-content .card-tag {
+  position: absolute;
+  top: -2.2em;
+  color: white;
+  background-color: #a72016;
+  padding: 0.5em 1em;
+}
+
+.card-content .card-article {
+  padding: 4vh 3vw;
+  text-align: justify;
+}
+
+.card-content .card-article h1, .card-content .card-article h2 {
+  margin: 1vh 0;
+  padding: 2vh 0;
+}
+
+.card-content .card-article h1 {
+  font-family: 'Miss Fajardose', cursive;
+  font-size: 2.8em;
+  color: #333333;
+  font-weight: lighter;
+  padding-bottom: 2vh;
+}
+
+.card-content .card-article h2 {
+  font-size: 1.6em;
+  margin-bottom: 3vh;
+  color: #a72016;
+  font-weight: lighter;
+}
+
+.card-foot {
+  margin-top: 4vh;
+}
+
+/* ADD
+@font-face
+
+HTML...
+
+SASS
+
+_partial.scss & import !?!
+    * reset
+    * card
+    * media preset
+    * ... ?
+    * @font-face
+
+*/
+/*# sourceMappingURL=style.css.map */
