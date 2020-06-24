@@ -112,6 +112,7 @@ body {
 }
 
 .card-foot {
+  position: relative;
   padding: 3vh 3vw 4vh 3vw;
   color: #b8b8b8;
   background-color: #f7f7f7;
