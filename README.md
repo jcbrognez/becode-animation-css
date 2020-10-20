@@ -3,7 +3,7 @@
 Creation of a simple animation in CSS while moving the mouse over the box.
 
 What happens ?
-* zoom over image
+* zoom over and image filter
 * text appears and slides up
 
 ![Animation1](./animationCSS1.jpg)
